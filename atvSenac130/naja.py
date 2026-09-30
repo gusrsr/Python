@@ -175,3 +175,5 @@ a = int(input('Digite uma base: '))
 b = int(input('Digite seu expoente: '))
 sum = a ** b
 print(sum)
+
+# comentario
