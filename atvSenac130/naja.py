@@ -170,10 +170,77 @@ print(f'A área do quadrado é : {sum}')
 # s1 = a - 1
 # s2 = a + 1
 # print(s1, a, s2)
-# 30
-a = int(input('Digite uma base: '))
-b = int(input('Digite seu expoente: '))
-sum = a ** b
-print(sum)
-
-# comentario
+# # 30
+# a = int(input('Digite uma base: '))
+# b = int(input('Digite seu expoente: '))
+# sum = a ** b
+# print(sum)
+# # 31
+# a = int(input('Digite um numero: '))
+# if a >= 1:
+#     print('positivo')
+# elif a < 0: 
+#     print('negativo')
+# elif a == 0:
+#     print('= 0')
+# # 32
+# a = int(input())
+# if a > 17:
+#     print('maior de idade')
+# else:
+#     print('menor de idade')
+# # 33
+# a = int(input())
+# if a % 2 == 0:
+#     print('par')
+# else:
+#     print('impar')
+# #34
+# try:
+#     a, b = map(int, input().split())
+#     if a > b:
+#         print('A maior que B')
+#     elif a < b:
+#         print('B maior que A')
+#     else:
+#         print('Numeros iguais')
+# except ValueError:
+#     print('preenche tudo ai pae')
+# else:
+#     print('tudo certin')
+#35
+# a, b, c = map(int, input().split())
+# if a > b and c:
+#     print('A e maior que os outros valores')
+# elif b > c and a:
+#     print('B e maior que os outros valores')
+# elif c > b and a:
+#     print('C e maior que os outros valores')
+# 36
+# a, b, c = map(int, input().split())
+# if a < b and c:
+#     print('A e menor que os outros valores')
+# elif b < c and a:
+#     print('B e menor que os outros valores')
+# elif c < b and a:
+#     print('C e menor que os outros valores')
+# # 37
+# a = int(input())
+# if a >= 6:
+#     print('Aprovado')
+# else:
+#     print('Reprovado')
+# 38
+# try:
+#     a, b, c = map(int, input().split())
+#     sum = a + b + c / 3
+#     if sum >= 7:
+#         print('Aprovado')
+#     elif sum >= 5 and sum < 7:
+#         print('Recuperacao')
+#     else:
+#         print('Reprovado')
+# except ValueError:
+#     print('Preencha corretamente')
+# else:
+#     print('Tente no proximo ano!')
