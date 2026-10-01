@@ -244,3 +244,20 @@ print(f'A área do quadrado é : {sum}')
 #     print('Preencha corretamente')
 # else:
 #     print('Tente no proximo ano!')
+# # 39
+# a = int(input())
+# if a <= 11:
+#     print('Criança')
+# elif a <= 17:
+#     print('Adolescente')
+# elif a <= 59:
+#     print('Adulto')
+# else:
+#     print('Idoso')
+# 40
+# a = int(input())
+# if a == 1234:
+#     print('Senha correta! Pode entrar!')
+# else:
+#     print('Tente novamente!')
+# 41
