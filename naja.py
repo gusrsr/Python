@@ -260,4 +260,40 @@ print(f'A área do quadrado é : {sum}')
 #     print('Senha correta! Pode entrar!')
 # else:
 #     print('Tente novamente!')
-# 41
+# # 41
+# a = input()
+# b = int(input())
+#
+# name = "gugu"
+# passwd = 1234
+#
+# if a and b == name and passwd:
+#     print('logou com sucesso!')
+# else:
+#     print('tente novamente!')
+#   42
+# a = int(input())
+# if a % 5 == 0:
+#     print('boa!')
+# else:
+#     print('Tente novamente!')
+#   43
+# a = int(input())
+# if a % 3 == 0 and a % 5 == 0:
+#     print('boa')
+# else:
+#     print('tente novamente')
+# 44
+# a = int(input())
+# if a % 4 == 0:
+#     print('bissexto')
+# else:
+#     print('tente novamente')
+# 45
+a = int(input())
+if a >= 200:
+    sum = a * 10 / 100
+    sum2 = a - sum
+    print(sum2)
+else:
+    print(a)
