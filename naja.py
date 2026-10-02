@@ -290,10 +290,41 @@ print(f'A área do quadrado é : {sum}')
 # else:
 #     print('tente novamente')
 # 45
-a = int(input())
-if a >= 200:
-    sum = a * 10 / 100
-    sum2 = a - sum
-    print(sum2)
+# a = int(input())
+# if a >= 200:
+#     sum = a * 10 / 100
+#     sum2 = a - sum
+#     print(sum2)
+# else:
+#     print(a)
+# 46
+# a, b = map(int, input().split())
+# if a >= 150:
+#     b = 0
+#     print(f"Preco da compra: {a}, Frete: {b}")
+# else:
+#     sum = b + 20
+#     print(f"Preco da compra: {a}, Frete: {sum}")
+# 47
+try:
+    c = input()
+    a, b = map(int, input().split())
+    s1 = a + b
+    s2 = a - b
+    s3 = a * b
+    s4 = a / b
+    if c == "+":
+        print(s1)
+    elif c == "-":
+        print(s2)
+    elif c == "*":
+        print(s3)
+    elif c == "/":
+        print(s4)  
+except ValueError:
+    print('preenche tudo ae')
+except ZeroDivisionError:
+    print('SEM 0 NA DIVISAO')
 else:
-    print(a)
+    print('boa!')
+
