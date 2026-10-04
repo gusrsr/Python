@@ -233,7 +233,7 @@ print(f'A área do quadrado é : {sum}')
 # 38
 # try:
 #     a, b, c = map(int, input().split())
-#     sum = a + b + c / 3
+#     sum = (a + b + c) / 3
 #     if sum >= 7:
 #         print('Aprovado')
 #     elif sum >= 5 and sum < 7:
@@ -306,25 +306,75 @@ print(f'A área do quadrado é : {sum}')
 #     sum = b + 20
 #     print(f"Preco da compra: {a}, Frete: {sum}")
 # 47
-try:
-    c = input()
-    a, b = map(int, input().split())
-    s1 = a + b
-    s2 = a - b
-    s3 = a * b
-    s4 = a / b
-    if c == "+":
-        print(s1)
-    elif c == "-":
-        print(s2)
-    elif c == "*":
-        print(s3)
-    elif c == "/":
-        print(s4)  
-except ValueError:
-    print('preenche tudo ae')
-except ZeroDivisionError:
-    print('SEM 0 NA DIVISAO')
-else:
-    print('boa!')
+# try:
+#     c = input()
+#     a, b = map(int, input().split())
+#     s1 = a + b
+#     s2 = a - b
+#     s3 = a * b
+#     s4 = a / b
+#     if c == "+":
+#         print(s1)
+#     elif c == "-":
+#         print(s2)
+#     elif c == "*":
+#         print(s3)
+#     elif c == "/":
+#         print(s4)  
+# except ValueError:
+#     print('preenche tudo ae')
+# except ZeroDivisionError:
+#     print('SEM 0 NA DIVISAO')
+# else:
+#     print('boa!')
+# 48
+# a, b, c = map(int, input().split())
+# if a < (b + c) and b < (a + c) and c < (b + a):
+#     print('certo')
+# else:
+#     print('deu nao pae')
+# 49
+# a, b, c = map(int, input().split())
+# if a < (b + c) and b < (a + c) and c < (b + a):
+#     if a == b and b == c:
+#         print('equilatero')
+#     elif a == b or a == c or b == c:
+#         print('isosceles')
+#     else:
+#         print('escaleno')
+# else:
+#     print('deu nao pae')
+# 50
+# a = float(input())
+# s1 = a * 10 / 100
+# s2 = a * 20 / 100
+# s3 = a - s1
+# s4 = a - s2
+#
+# if a < 2000.1:
+#     print(f'Valor = R${a}, Taxa = 0')
+# elif a <= 4000:
+#     print(f'Valor = R${s3}, Taxa = {s1}')
+# elif a > 4000:
+#     print(f'Valor = R${s4}, Taxa = {s2}')
+# 51
+# for numero in range(1, 11):
+#     print(numero)
+# # 52
+# for a in range(10, -1, - 1):
+#     print(a)
+# print('Fim!')
+# 53
+# a = int(input())
+# for a in range(0, 100, 2):
+#     print(a)
+# 54
+# for a in range(1, 101, 2):
+#     print(a)
+# 55
+a = int(input())
+b = 0
+for b in range(1, 11):
+    sum = a * b
+    print(f'{a} x {b} = {sum}')
 
