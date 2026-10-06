@@ -372,9 +372,16 @@ print(f'A área do quadrado é : {sum}')
 # for a in range(1, 101, 2):
 #     print(a)
 # 55
-a = int(input())
-b = 0
-for b in range(1, 11):
-    sum = a * b
-    print(f'{a} x {b} = {sum}')
+# a = int(input())
+# b = 0
+# for b in range(1, 11):
+#     sum = a * b
+#     print(f'{a} x {b} = {sum}')
+# 56
+# n = int(input())
+# soma = 0
+# for i in range(1, n+ 1):
+#     soma = soma + i
+# print(soma)
+# 57
 
