@@ -384,4 +384,15 @@ print(f'A área do quadrado é : {sum}')
 #     soma = soma + i
 # print(soma)
 # 57
-
+# n = int(input())
+# ft = 1
+# for i in range(1, n +1):
+#     ft = ft * i 
+#     print(ft)
+# 58
+b = 0
+for i in range(1, 11):
+    a = int(input())
+    if a % 2 == 0:
+        b += 1
+print(b)   
