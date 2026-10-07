@@ -390,9 +390,19 @@ print(f'A área do quadrado é : {sum}')
 #     ft = ft * i 
 #     print(ft)
 # 58
+# b = 0
+# for i in range(1, 11):
+#     a = int(input())
+#     if a % 2 == 0:
+#         b += 1
+# print(b)   
+# 59
+sum = 0
 b = 0
-for i in range(1, 11):
+for i in range (1,11):
     a = int(input())
-    if a % 2 == 0:
+    if a > 0:
         b += 1
-print(b)   
+        sum = sum + a
+       
+print(b, sum)
