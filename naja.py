@@ -397,12 +397,41 @@ print(f'A área do quadrado é : {sum}')
 #         b += 1
 # print(b)   
 # 59
-sum = 0
-b = 0
-for i in range (1,11):
-    a = int(input())
-    if a > 0:
-        b += 1
-        sum = sum + a
-       
-print(b, sum)
+# sum = 0
+# b = 0
+# for i in range (1,11):
+#     a = int(input())
+#     if a > 0:
+#         b += 1
+#         sum = sum + a
+#
+# print(b, sum)
+# 60
+# numeros = list(map(int, input().split()))
+# maior = numeros[0]
+# for i in range(0, 5):
+#     if numeros[i] > maior:
+#         maior = numeros[i]
+#         print(f'Este {maior}!')
+#     else:
+#         print('menor')
+# print(maior)
+# 61
+# numeros = list(map(int, input().split()))
+# menor = numeros[0]
+# for i in range(5):
+#     if numeros[i] < menor:
+#         menor = numeros[i]
+#         print(f'Este {menor}!')
+#     else:
+#         print('Maior')
+# print(menor)
+# 62
+# notas = list(map(int, input().split()))
+# cal = 0
+# for i in range(5):
+#     cal += notas[i]
+#     div = cal / 5 
+# print(cal, div)
+# 63
+#
