@@ -434,4 +434,95 @@ print(f'A área do quadrado é : {sum}')
 #     div = cal / 5 
 # print(cal, div)
 # 63
-#
+# senha = input()
+# while senha != 'bestfriends4ever':
+#     print('Tente novamente!')
+#     senha = input()
+# else:
+#     print('Senha Correta! Entrando...')
+# 64
+# numero = int(input())
+# while numero <= 0:
+#     print('Digite um numero positivo!')
+#     numero = int(input())
+# else:
+#     print(f'Voce digitou um numero positivo! \n{numero}')
+# 65
+# n = int(input('Digite um numero: '))
+# while n != 0:
+#     print(' Digite 1 para dizer Ola. \n Digite 2 para mostrar uma mensagem. \n Digite 0 para sair.') 
+#     if n == 1:
+#         print('Parabens! Escolheu 1! --> Ola')
+#     elif n == 2:
+#         print('Parabens! Escolheu 2! --> Uma mensagem')
+#     n = int(input())
+# else:
+#     print('Feito!')
+# 66
+# n = int(input())
+# sum = 0
+# while n != 0:
+#     print('Digite um numero: ')
+#     sum += n
+#     n = int(input())
+# else:
+#     print(f'Feito! Sua soma e: {sum}')
+# 67
+# n = int(input())
+# sum = 0
+# calc = 0
+# while n != -1:
+#     print('Digite um numero: ')
+#     sum += n
+#     calc = sum / n
+#     n = int(input())
+# else:
+#     print(f' Suas notas: {sum}. \n Sua media: {calc}')
+# 68
+# n = int(input('Tente acertar o numero: '))
+# while n != 19: 
+#     if n <= 5:
+#         print('Precisa de um numero maior.')
+#     elif n <= 9:
+#         print('Numero pequeno.')
+#     elif n <= 12:
+#         print('Ta chegando perto.')
+#     elif n <= 15:
+#         print('To gostando da resiliencia.')
+#     elif n <= 17:
+#         print('Ta MUITO perto.')
+#     elif n > 19 and n < 30:
+#         print('Agora ta longe.')
+#     elif n <= 30:
+#         print('Mds, mt longe, esquece bro.')
+#     elif n == 18:
+#         print('Que isso? do lado?')
+#     n = int(input())
+# else:
+#     print('Acertou o numero!')
+# 69
+# n = int(input())
+# ct = 0
+# for i in range(2, n):
+#     if n % i == 0:
+#         ct += 1
+# if ct > 0:
+#     print('Numero nao primo!')
+# elif n == 1:
+#     print('1 Nao vale!')
+# else:
+#     print('Numero primo!')
+# 70
+a, b = map(int, input().split())
+ct = 0
+tc = 0
+for i in range(a + 1, b):
+    if a and b % i == 0:
+        ct += 1
+    else:
+        tc = i
+if ct > 0:
+    print('Nao tem primos')
+elif ct == 0:
+    print(tc)
+
