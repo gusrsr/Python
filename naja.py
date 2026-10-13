@@ -513,16 +513,44 @@ print(f'A área do quadrado é : {sum}')
 # else:
 #     print('Numero primo!')
 # 70
-a, b = map(int, input().split())
-ct = 0
-tc = 0
-for i in range(a + 1, b):
-    if a and b % i == 0:
-        ct += 1
-    else:
-        tc = i
-if ct > 0:
-    print('Nao tem primos')
-elif ct == 0:
-    print(tc)
-
+# a, b = map(int, input().split())
+# ct = 0
+# tc = 0
+# for i in range(a + 1, b):
+#     if a and b % i == 0:
+#         ct += 1
+#     else:
+#         tc = i
+# if ct > 0:
+#     print('Nao tem primos')
+# elif ct == 0:
+#     print(tc)
+# 71
+# a = input()
+# b = len(a)
+# print(f'A palavra {a} possui {b} caracteres.')
+# 72
+# a = input()
+# b = a.upper()
+# c = a.lower()
+# print(f'A frase {a}. \nMaiusculo. {b} \n \b Minusculo. {c}')
+# 73
+# a = input()
+# b = a[0]
+# c = a[-1]
+# if a == " ":
+#     print('Digite uma palavra!')
+# else:
+#     d = a[0].upper()
+#     print(f'A palavra: {a}. \n Primeira letra: {d} \n Ultima letra: {c}')
+# 74
+# a = input()
+# b = a.count('a')
+# print(f'Quantas vezes a letra A apareceu: {b}')
+# 75
+a = input()
+b = a[::-1]
+if b == a:
+    print(f'Ela pode ser lida de tras pra frente')
+else:
+    print('Nao pode ser lida.')
