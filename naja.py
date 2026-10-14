@@ -548,9 +548,20 @@ print(f'A área do quadrado é : {sum}')
 # b = a.count('a')
 # print(f'Quantas vezes a letra A apareceu: {b}')
 # 75
-a = input()
-b = a[::-1]
-if b == a:
-    print(f'Ela pode ser lida de tras pra frente')
-else:
-    print('Nao pode ser lida.')
+# a = input()
+# b = a[::-1]
+# if b == a:
+#     print(f'Ela pode ser lida de tras pra frente')
+# else:
+#     print('Nao pode ser lida.')
+# 76
+# a = input()
+# b = a[::-1]
+# print(f'O input fatiado \n {b[2:]} \n {b[:3]}')
+# 77
+# a = list(input().split())
+# for i in range(0, len(a)):
+#     print(a[i])
+# 78
+a = list(input().split())
+print(len(a))
