@@ -563,5 +563,66 @@ print(f'A área do quadrado é : {sum}')
 # for i in range(0, len(a)):
 #     print(a[i])
 # 78
-a = list(input().split())
-print(len(a))
+# a = list(input().split())
+# print(len(a))
+# 79
+# a = input()
+# print(f'A frase: {a}') 
+# b = input('Palavra a substituir: ')
+# r = a.replace("Hoje",b)
+# print(r)
+# 80
+# a = input('Digite um endereço de e-mail: ')
+# novoTexto = a.split('@')
+# if '.' in novoTexto[1]:
+#     print('contem . apos o @')
+# 81
+# a = list(input().split())
+# for i in range(len(a)):
+#     print(a[i])
+# 82
+# a = []
+# for i in range(6):
+#     nome = input()
+#     a.append(nome)
+# print(a)
+# 83
+# a = list(map(int, input().split()))
+# b = 0
+# for i in range(len(a)):
+#     b += a[i]
+# print(b)
+# 84
+# a = list(map(int, input().split()))
+# b = a[0]
+# for i in range(len(a)):
+#     if a[i] > b:
+#         b = a[i]
+# print(b)
+# 85
+# a = list(map(int, input().split()))
+# b = a[0]
+# for i in range(len(a)):
+#     if a[i] < b:
+#         b = a[i]
+# print(b)
+# 86
+# a = list(map(int, input().split()))
+# cal2 = 0
+# for i in range(len(a)): 
+#     cal2 += a[i] 
+# print(cal2 / len(a))
+# 87
+# numeros = list(map(int, input().split()))
+# pares = []
+# for i in range(len(numeros)):
+#     if numeros[i] % 2 == 0:
+#         pares.append(numeros[i])
+# print(pares)
+# 88
+nomes = list(input().split())
+for i in range(1):
+    nome = input('Digite um nome para retirar: ') 
+    if nome in nomes:
+        nomes.remove(nome)
+print(nomes)
