@@ -620,9 +620,55 @@ print(f'A área do quadrado é : {sum}')
 #         pares.append(numeros[i])
 # print(pares)
 # 88
-nomes = list(input().split())
-for i in range(1):
-    nome = input('Digite um nome para retirar: ') 
-    if nome in nomes:
-        nomes.remove(nome)
-print(nomes)
+# nomes = list(input().split())
+# for i in range(1):
+#     nome = input('Digite um nome para retirar: ') 
+#     if nome in nomes:
+#         nomes.remove(nome)
+# print(nomes)
+# 89
+# a = list(input().split())
+# for i in range(len(a)):
+#     produto = input('Pesquise por um produto: ')
+#     if produto in a:
+#         print(f'Produto encontrado! \n {produto}')
+# 90
+# a = list(map(int, input().split()))
+# for i in range(1):
+#     a.sort()
+#     print(a)
+#     a.sort(reverse=True)
+#     print(a)
+# 91
+# a = set(map(int, input().split()))
+# print(a)
+# 92
+# a = set(map(int, input().split()))
+# b = set(map(int, input().split()))
+# print(a & b)
+# 93
+# a = tuple(map(int, input().split()))
+# x = a[0]
+# y = a[1]
+# print(f'X: {x}, Y: {y}')
+# 94
+# pessoa = {}
+# pessoa['nome'] = input('Digite seu nome: ')
+# pessoa['idade'] = input('Digite sua idade: ')
+# pessoa['cidade'] = input('Digite sua cidade: ')
+# print(f'Seu nome: {pessoa['nome']} \nSua idade: {pessoa['idade']} \nSua cidade: {pessoa['cidade']}')
+# 95
+# aluno = {}
+# aluno['nome'] = input('Digite seu nome: ')
+# aluno['nota1'] = int(input('Digite sua primeira nota: '))
+# aluno['nota2'] = int(input('Digite sua segunda nota: '))
+# cal = (aluno['nota1'] + aluno['nota2']) / 2
+# aluno.update({'media': {cal}})
+# print(aluno)
+# 96
+p1 = {}
+p2 = {}
+p3 = {}
+lista = [p1, p2, p3]
+p1['nome'], p1['preco'], p2['nome'], p2['preco'], p3['nome'], p3['preco'] = input('Digite o nome do produto: '), input('Digite o nome do segundo produto: '), input('Digite o nome do terceiro produto: '), int(input('Digite o preco do produto: ')), int(input('Digite o preco do segundo produto: ')), int(input('Digite o preco do terceiro produto: '))
+print(lista)
