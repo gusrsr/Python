@@ -666,9 +666,13 @@ print(f'A área do quadrado é : {sum}')
 # aluno.update({'media': {cal}})
 # print(aluno)
 # 96
-p1 = {}
-p2 = {}
-p3 = {}
-lista = [p1, p2, p3]
-p1['nome'], p1['preco'], p2['nome'], p2['preco'], p3['nome'], p3['preco'] = input('Digite o nome do produto: '), input('Digite o nome do segundo produto: '), input('Digite o nome do terceiro produto: '), int(input('Digite o preco do produto: ')), int(input('Digite o preco do segundo produto: ')), int(input('Digite o preco do terceiro produto: '))
-print(lista)
+# p1 = {}
+# p2 = {}
+# p3 = {}
+# lista = [p1, p2, p3]
+# for i in lista:
+#     i['nome'] = input('Digite o nome do produto: ')
+#     i['preco'] = input('Digite o preco do produto: ')
+#     for nome, preco in i.items():
+#         print(nome, preco)
+# 97
