@@ -676,3 +676,35 @@ print(f'A área do quadrado é : {sum}')
 #     for nome, preco in i.items():
 #         print(nome, preco)
 # 97
+# p1 = {}
+# p2 = {}
+# p3 = {}
+# lista = [p1, p2, p3]
+# maior = 0
+# for i in lista:
+#     i['nome'] = input('Insira o nome do produto: ')
+#     i['preco'] = int(input('Insira o preco do produto: '))
+#     maior = p1['preco']
+#     if i['preco'] > maior:
+#         maior = i['nome'], i['preco']
+#     else:
+#         maior = p1['nome'], p1['preco']
+# print(maior)
+# 98
+p1 = {}
+agenda = [p1]
+c = False
+for i in agenda:
+    for a in range(3):
+        nome = input('Digite um nome: ') 
+        i[nome] = input('Digite um telefone: ')
+b = input('Digite um nome para buscar um telefone: ')
+for i in agenda:
+    for nome, nomeValue in i.items():
+        if b == nome:
+            c = True
+            print(nome, nomeValue) 
+if c == False:
+    print('Nome nao existe!')
+            
+
