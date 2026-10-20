@@ -691,20 +691,49 @@ print(f'A área do quadrado é : {sum}')
 #         maior = p1['nome'], p1['preco']
 # print(maior)
 # 98
+# p1 = {}
+# agenda = [p1]
+# c = False
+# for i in agenda:
+#     for a in range(3):
+#         nome = input('Digite um nome: ') 
+#         i[nome] = input('Digite um telefone: ')
+# b = input('Digite um nome para buscar um telefone: ')
+# for i in agenda:
+#     for nome, nomeValue in i.items():
+#         if b == nome:
+#             c = True
+#             print(nome, nomeValue) 
+# if c == False:
+#     print('Nome nao existe!')
+# 99
+# p1 = {}
+# frase = input().split()
+# conj = set(frase)
+# for i in conj:
+#     qnt = frase.count(i)
+#     p1[i] = qnt
+# print(p1)
+# 100
 p1 = {}
-agenda = [p1]
-c = False
-for i in agenda:
-    for a in range(3):
-        nome = input('Digite um nome: ') 
-        i[nome] = input('Digite um telefone: ')
-b = input('Digite um nome para buscar um telefone: ')
-for i in agenda:
-    for nome, nomeValue in i.items():
-        if b == nome:
-            c = True
-            print(nome, nomeValue) 
-if c == False:
-    print('Nome nao existe!')
-            
+n = False
+for i in range(5):
+    produto = input('Digite o nome do produto: ')
+    p1[produto] = int(input('Digite o valor do produto: '))
+print(p1)
+b = input('Procure um produto: ')
+for produto, produtoValue in p1.items():
+    if b == produto:
+        n = True
+        print(f'{produto}.')
+        c = int(input('Qual a quantidade que deseja retirar: '))
+        calc = produtoValue - c
+        if calc < 0:
+            print('Numero negativo!')
+        else:
+            print(calc)
+if n == False:
+    print('Produto nao encontrado!')
+
+
 
