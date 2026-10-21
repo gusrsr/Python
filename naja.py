@@ -715,25 +715,86 @@ print(f'A área do quadrado é : {sum}')
 #     p1[i] = qnt
 # print(p1)
 # 100
-p1 = {}
-n = False
-for i in range(5):
-    produto = input('Digite o nome do produto: ')
-    p1[produto] = int(input('Digite o valor do produto: '))
-print(p1)
-b = input('Procure um produto: ')
-for produto, produtoValue in p1.items():
-    if b == produto:
-        n = True
-        print(f'{produto}.')
-        c = int(input('Qual a quantidade que deseja retirar: '))
-        calc = produtoValue - c
-        if calc < 0:
-            print('Numero negativo!')
-        else:
-            print(calc)
-if n == False:
-    print('Produto nao encontrado!')
-
-
-
+# p1 = {}
+# n = False
+# for i in range(5):
+#     produto = input('Digite o nome do produto: ')
+#     p1[produto] = int(input('Digite o valor do produto: '))
+# print(p1)
+# b = input('Procure um produto: ')
+# for produto, produtoValue in p1.items():
+#     if b == produto:
+#         n = True
+#         print(f'{produto}.')
+#         c = int(input('Qual a quantidade que deseja retirar: '))
+#         calc = produtoValue - c
+#         if calc < 0:
+#             print('Numero negativo!')
+#         else:
+#             print(calc)
+# if n == False:
+#     print('Produto nao encontrado!')
+# 101
+# def saudacao():
+#     print('oi')
+# saudacao()
+# 102
+# def saudacao(nome):
+#     print(f'Ola, {nome}')
+# saudacao('Gustavo!')
+#103
+# def sumo(a, b):
+#     resultado = a + b
+#     return resultado
+# somar = sumo(1, 2)
+# print(somar)
+# 104
+# def maior(a, b):
+#     if b > a:
+#         print('B maior que A')
+#     else:
+#         print('A maior que B')
+# c, d = input().split()
+# calc = maior(c, d)
+# print(calc)
+# 105
+# def evens(a):
+#     if a % 2 == 0:
+#         print('par')
+#     else:
+#         print('impar')
+# calc = evens(1)
+# print(evens)
+# 106
+# a, b, c = map(int, input().split())
+# def media(a, b, c):
+#     cal1 = a + b + c     
+#     cal2 = cal1 / 3
+#     return cal2
+# mediaRE = media(a, b, c)
+# print(mediaRE)
+# 107
+# s = list(map(int, input().split()))
+# calc = 0
+# def cal(s):
+#     print(s)
+#     calc = s[0] * s[1]
+#     return calc
+# calk = cal(s)
+# print(f'A area do retangulo e: {calk}')
+# 108
+# s = int(input())
+# def graus(s):
+#     calc = (s * 9 / 5) + 32
+#     return calc
+# calk = graus(s)
+# print(f'Fahrenheit: {calk}')
+# 109
+a = int(input())
+b = 1
+def fatorial(a, b):
+    for i in range(1, a +1):
+        b *= i
+    return b
+cal = fatorial(a, b)
+print(cal)
