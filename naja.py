@@ -790,11 +790,113 @@ print(f'A área do quadrado é : {sum}')
 # calk = graus(s)
 # print(f'Fahrenheit: {calk}')
 # 109
-a = int(input())
-b = 1
-def fatorial(a, b):
-    for i in range(1, a +1):
-        b *= i
-    return b
-cal = fatorial(a, b)
-print(cal)
+# a = int(input())
+# b = 1
+# def fatorial(a, b):
+#     for i in range(1, a +1):
+#         b *= i
+#     return b
+# cal = fatorial(a, b)
+# print(cal)
+# 110
+# n = int(input())
+# def primo(n):
+#     b = False
+#     for i in range(2, n):
+#         if n % i == 0:
+#             b = False
+#             break
+#         else:
+#             b = True
+#     if b == True:
+#         print('numero Primo!')
+#     else:
+#         print('numero nao Primo ou Invalido!')
+#     return b
+# cal = primo(n)
+# print(cal)
+# 111
+# a = input()
+# def vogal(a):
+#     total = 0
+#     b = ['a', 'e', 'i', 'o', 'u']
+#     for i in b:
+#         if i in a:
+#             total += a.count(i)
+#     return total
+#     print(total)
+# cal = vogal(a)
+# print(cal)
+# 112
+# a = [1, 3, 9, 10, 304, -203, 89, 43]
+# def maior(a):
+#     b = a[0]
+#     for i in a:
+#         if i > b:
+#             b = i
+#     print(b)
+# cal = maior(a)
+# print(cal)
+# 113
+# a = list(map(int, input().split()))
+# def media(a):
+#     o = 0
+#     c = 0
+#     cal = 0
+#     for i in range(len(a)):
+#         o += i
+#         c = i + i
+#     cal = c / o
+#     print(cal)
+# cal = media(a)
+# print(cal)
+# 114
+# a = [1, -34, 5, -10 , 67, 19, -209]
+# def positivo(a):
+#     novaLista = []
+#     for i in a:
+#         if i > 0:
+#             novaLista.append(i)
+#     print(novaLista)
+# cal = positivo(a)
+# print(cal)
+# 115
+# def soma():
+#     a, b = map(int, input('Digite numeros para a soma: ').split())
+#     a = a + b
+#     print(a)
+# def sub():
+#     a, b = map(int, input('Digite numeros para a subtracao: ').split())
+#     a = a - b
+#     print(a)
+# def mult():
+#     a, b = map(int, input('Digite numeros para a multiplicacao: ').split())
+#     a = a * b
+#     print(a)
+# def div():
+#     a, b = map(int, input('Digite numeros para a divisao: ').split())
+#     a = a / b
+#     print(a)
+# try:
+#     cal = 0
+#     a = int(input('Calculadora em PythoN! \nDigite de 1-4 para as opcoes: \n1 == SOMA\n2 == SUBTRACAO\n3 == MULTIPLICACAO\n4 == DIVISAO\n'))
+#     match a:
+#         case 1:
+#             cal = soma()
+#         case 2:
+#             cal = sub()
+#         case 3:
+#             cal = mult()
+#         case 4:
+#             cal = div()
+# except ValueError:
+#     print('Digite os 2 valores mané!')
+# 116
+from pathlib import Path
+
+caminho = Path(__file__).parent / 'texto.txt'
+a = input('Digite texto para colocar em um arquivo: ')
+
+with open(caminho, 'w', encoding='utf-8') as arquivo:
+    arquivo.write(a)
+
