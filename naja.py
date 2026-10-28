@@ -891,12 +891,29 @@ print(f'A área do quadrado é : {sum}')
 #             cal = div()
 # except ValueError:
 #     print('Digite os 2 valores mané!')
-# 116
 from pathlib import Path
-
 caminho = Path(__file__).parent / 'texto.txt'
-a = input('Digite texto para colocar em um arquivo: ')
-
-with open(caminho, 'w', encoding='utf-8') as arquivo:
-    arquivo.write(a)
-
+# 116
+# a = input('Digite texto para colocar em um arquivo: ')
+#
+# with open(caminho, 'w', encoding='utf-8') as arquivo:
+#     arquivo.write(a)
+# 117
+# a = input('Bem vindo ao Programa de registro de Nomes!\nDigite 1 para registrar nomes em um arquivo txt.\nDigite s para sair do programa!\n')
+# if a == '1':
+#     with open(caminho, 'w', encoding='utf-8') as arquivo:
+#         pass
+#     while True:
+#         texto = input('')
+#         if texto == 's':
+#             break
+#         with open(caminho, 'a', encoding='utf-8') as arquivo:
+#                 arquivo.write(texto + '\n')
+# 118
+a = input('Digita uns nome ae: ')
+with open(caminho, 'w+', encoding='utf-8') as arquivo:
+    arquivo.write(a + '\n')
+    arquivo.seek(1)
+    print(arquivo.readline())
+# 119
+#
