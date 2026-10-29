@@ -892,10 +892,12 @@ print(f'A área do quadrado é : {sum}')
 # except ValueError:
 #     print('Digite os 2 valores mané!')
 from pathlib import Path
+import calculos
 caminho = Path(__file__).parent / 'texto.txt'
+caminho2 = Path(__file__).parent / 'teste.txt'
 # 116
 # a = input('Digite texto para colocar em um arquivo: ')
-#
+
 # with open(caminho, 'w', encoding='utf-8') as arquivo:
 #     arquivo.write(a)
 # 117
@@ -910,10 +912,36 @@ caminho = Path(__file__).parent / 'texto.txt'
 #         with open(caminho, 'a', encoding='utf-8') as arquivo:
 #                 arquivo.write(texto + '\n')
 # 118
-a = input('Digita uns nome ae: ')
-with open(caminho, 'w+', encoding='utf-8') as arquivo:
-    arquivo.write(a + '\n')
-    arquivo.seek(1)
-    print(arquivo.readline())
+# a = input('Digita uns nome ae: ')
+# with open(caminho, 'w+', encoding='utf-8') as arquivo:
+#     arquivo.write(a + '\n')
+#     arquivo.seek(0)
+#     print(arquivo.readline())
 # 119
-#
+# with open(caminho, 'r', encoding='utf-8') as arquivo:
+#     for i in arquivo:
+#         a = i.strip()
+#         print(a)
+# 120
+# with open(caminho2, 'r') as arquivo:
+#     print(sum(1 for i in arquivo)) ##essa parte eu tava perguntando pra AI uma forma de  usar uma variavel antes de declarar ela em python(declarando e usando ela em uma operacao ao mesmo tempo.) e ai ele mostrou como contar as linhas, achei interessante e coloquei. NAO ME CRUCIFIQUE RAFAEL!!1111!!1!!1##
+# 121
+# try:
+#     a = int(input('Envie valores inteiros: '))
+#     print(f'Valor Aceito!\n--> {a}')
+# except ValueError:
+#     print('VALOR INCORRETO!')
+# 122
+# try:
+#     a, b = map(int,input('Digite 2 numeros inteiros: ').split())
+#     cal = a / b
+#     print(cal)
+# except ValueError:
+#     print('Digite numeros!')
+# except ZeroDivisionError:
+#     print('Digite valores maiores que 0')
+# 123
+#outros arquivos
+# print(calculos.soma(3, 2))
+# 124
+
