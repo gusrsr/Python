@@ -892,7 +892,9 @@ print(f'A área do quadrado é : {sum}')
 # except ValueError:
 #     print('Digite os 2 valores mané!')
 from pathlib import Path
-import calculos
+
+# import calculos
+
 caminho = Path(__file__).parent / 'texto.txt'
 caminho2 = Path(__file__).parent / 'teste.txt'
 # 116
@@ -943,5 +945,135 @@ caminho2 = Path(__file__).parent / 'teste.txt'
 # 123
 #outros arquivos
 # print(calculos.soma(3, 2))
-# 124
-
+# 124 e 125
+# class Pessoa:
+#     def __init__(self, nome, idade):
+#         self.nome = nome
+#         self.idade = idade
+#     def __str__(self): 
+#         return f'Nome: {self.nome} Tem: {self.idade} anos.\n'
+#
+# pessoa1 = Pessoa('Gustavo', 17)
+# pessoa2 = Pessoa('Danielle', 43)
+# print(pessoa1, pessoa2)
+# 126
+# class Pessoa:
+#     def __init__(self, nome):
+#         self.nome = nome
+#     def apresentar(self):
+#         return print(f'Ola {self.nome}!')
+# pessoa1 = Pessoa('Gustavo')
+# pessoa1.apresentar()
+# 127
+# class Produto:
+#     def __init__(self, nome, preco): 
+#         self.nome = nome
+#         self.preco = preco
+#     def __repr__(self): 
+#         return f'Nome={self.nome}, Preco={self.preco}'
+# produto1 = Produto('Cacho de Banana', 2)
+# produto2 = Produto('Tomate', 1)
+# produto3 = Produto('Cebola', 1)
+# print(produto1, produto2, produto3, sep='\n')
+# 128
+# class Produto:
+#     def __init__(self, nome, preco): 
+#         self.nome = nome
+#         self.preco = preco
+#     def aplicar_desconto(self, percentual):
+#         desconto = (self.preco * percentual) / 100
+#         novoPreco = self.preco - desconto
+#         self.preco = novoPreco
+#         return f'Nome={self.nome}, Preco={self.preco}'
+# produto1 = Produto('Cacho de Banana', 10)
+# produto2 = Produto('Tomate', 15)
+# produto3 = Produto('Cebola', 18)
+# print(produto1.aplicar_desconto(2), produto2.aplicar_desconto(2), produto3.aplicar_desconto(2), sep='\n')
+# 129
+# class contaBanco:
+#     def __init__(self, titular, saldo):
+#         self.titular = titular
+#         self.saldo = saldo
+#     def __str__(self):
+#         return f'{self.titular}, Bem vindo a sua conta Bancaria! Seu saldo: {self.saldo}. '
+#     def depositar(self, valor):
+#         self.saldo += valor
+#     def sacar(self, valor):
+#         self.saldo -= valor
+# conta1 = contaBanco('Gustavo', 300)
+# print(conta1)
+# a = int(input('Digite 1 para depositar e 2 para sacar: '))
+# match a:
+#     case 1:
+#         b = int(input('Digite o valor do deposito: '))
+#         contaBanco.depositar(conta1, b)
+#         print(conta1)
+#     case 2:
+#         b = int(input('Digite o valor para sacar: '))
+#         contaBanco.sacar(conta1, b)
+#         print(conta1)
+#         if conta1.saldo < 0:
+#             print('Saldos negativos sao invalidos!')
+# 130 e 131
+# notas = [7.5, 8.0, 9.5, 6.0, 10.0]
+# class Aluno:
+#     def __init__(self, nome, notas):
+#         self.nome = nome
+#         self.notas = notas
+#     def media(self):
+#         cal = sum(notas) / len(notas)
+#         cal2 = float(f'{cal:.2f}')
+#         return cal2
+#     def __str__(self):
+#         return f'Nome={self.nome}, Notas={self.notas}'
+#     def situacao(self):
+#         if aluno1.media() >= 6:
+#             return 'Aprovado!'
+#         else:
+#             return 'Reprovado!'
+#
+# aluno1 = Aluno('Gustavo', notas)
+# print(aluno1,aluno1.media(), aluno1.situacao())
+# 132
+# class Retangulo:
+#     def __init__(self, largura, altura): 
+#         self.largura = largura
+#         self.altura = altura
+#     def area(self):
+#         c = self.largura * self.altura
+#         return c
+#     def perimetro(self):
+#         c = 2 * (self.largura + self.altura)
+#         return c
+# retangulo1 = Retangulo(10, 5)
+# print(retangulo1.area(), retangulo1.perimetro())
+# 133
+class Carro:
+    def __init__(self, modelo, velocidade_atual, velocidade_maxima):
+        self.modelo = modelo
+        self.velocidade_atual = velocidade_atual
+        self.velocidade_maxima = velocidade_maxima
+    def __str__(self): 
+        return f'Modelo={self.modelo}, Velocidade Atual={self.velocidade_atual}, Velocidade Maxima={self.velocidade_maxima}'
+    def acelerar(self, valor):
+        self.velocidade_atual += valor
+    def frear(self, valor):
+        self.velocidade_atual -= valor
+carro1 = Carro('Ford', 50, 100)
+print(f'O Carro {carro1}')
+b = int(input('Digite 1 para acelerar e 2 para frear: '))
+match b:
+    case 1:
+        c = int(input('Digite quanto voce quer acelerar: '))
+        if c <= carro1.velocidade_maxima and c > 0:
+            carro1.acelerar(c)
+            print(carro1)
+        else:
+            print('Nao pode ultrapassar a velocidade maxima!')
+    case 2:
+        c = int(input('Digite o quanto voce quer frear: '))
+        if c <= carro1.velocidade_maxima and c > 0:
+            carro1.frear(c)
+            print(carro1)
+        else:
+            print('Nao pode ultrapassar a velocidade maxima!') 
