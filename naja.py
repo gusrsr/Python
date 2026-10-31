@@ -1048,32 +1048,77 @@ caminho2 = Path(__file__).parent / 'teste.txt'
 # retangulo1 = Retangulo(10, 5)
 # print(retangulo1.area(), retangulo1.perimetro())
 # 133
-class Carro:
-    def __init__(self, modelo, velocidade_atual, velocidade_maxima):
-        self.modelo = modelo
-        self.velocidade_atual = velocidade_atual
-        self.velocidade_maxima = velocidade_maxima
-    def __str__(self): 
-        return f'Modelo={self.modelo}, Velocidade Atual={self.velocidade_atual}, Velocidade Maxima={self.velocidade_maxima}'
-    def acelerar(self, valor):
-        self.velocidade_atual += valor
-    def frear(self, valor):
-        self.velocidade_atual -= valor
-carro1 = Carro('Ford', 50, 100)
-print(f'O Carro {carro1}')
-b = int(input('Digite 1 para acelerar e 2 para frear: '))
-match b:
-    case 1:
-        c = int(input('Digite quanto voce quer acelerar: '))
-        if c <= carro1.velocidade_maxima and c > 0:
-            carro1.acelerar(c)
-            print(carro1)
-        else:
-            print('Nao pode ultrapassar a velocidade maxima!')
-    case 2:
-        c = int(input('Digite o quanto voce quer frear: '))
-        if c <= carro1.velocidade_maxima and c > 0:
-            carro1.frear(c)
-            print(carro1)
-        else:
-            print('Nao pode ultrapassar a velocidade maxima!') 
+# class Carro:
+#     def __init__(self, modelo, velocidade_atual, velocidade_maxima):
+#         self.modelo = modelo
+#         self.velocidade_atual = velocidade_atual
+#         self.velocidade_maxima = velocidade_maxima
+#     def __str__(self): 
+#         return f'Modelo={self.modelo}, Velocidade Atual={self.velocidade_atual}, Velocidade Maxima={self.velocidade_maxima}'
+#     def acelerar(self, valor):
+#         self.velocidade_atual += valor
+#     def frear(self, valor):
+#         self.velocidade_atual -= valor
+# carro1 = Carro('Ford', 50, 100)
+# print(f'O Carro {carro1}')
+# b = int(input('Digite 1 para acelerar e 2 para frear: '))
+# match b:
+#     case 1:
+#         c = int(input('Digite quanto voce quer acelerar: '))
+#         if c <= carro1.velocidade_maxima and c > 0:
+#             carro1.acelerar(c)
+#             print(carro1)
+#         else:
+#             print('Nao pode ultrapassar a velocidade maxima!')
+#     case 2:
+#         c = int(input('Digite o quanto voce quer frear: '))
+#         if c <= carro1.velocidade_maxima and c > 0:
+#             carro1.frear(c)
+#             print(carro1)
+#         else:
+#             print('Nao pode ultrapassar a velocidade maxima!') 
+# 134
+class Livro: ##FRITADOR DE CEREBRO 3000
+    def __init__(self, titulo, autor, disponivel, id):
+        self.titulo = titulo
+        self.autor = autor
+        self.disponivel = disponivel
+        self.id = id
+class Biblioteca:
+    def __init__(self):
+        self.livros = []
+    def adicionar(self, Livro):
+        self.livros.append(Livro)
+    def visualizar(self):
+        for i in self.livros:
+            print(i.titulo, i.autor, i.disponivel, i.id)
+    def emprestar(self, i):
+        self.livros[i].disponivel = 'Nao'
+    def devolver(self, i):
+        self.livros[i].disponivel = 'Sim'
+biblioteca = Biblioteca()
+livro1 = Livro('O Auto da compadecida', 'Ariano Suassuna', 'Sim', 0)
+livro2 = Livro('Meridiano de sangue', 'Cormac McCarthy', 'Sim', 1)
+biblioteca.adicionar(livro1)
+biblioteca.adicionar(livro2)
+try:
+    while True:
+        a = int(input('Digite 0 para sair\n1 para visualizar os itens\n2 para emprestar um livro\n3 para devolver o livro\n: '))
+        match a:
+            case 0:
+                break
+            case 1:
+                biblioteca.visualizar()
+                continue
+            case 2:
+                a = int(input('Digite o id do livro que queira pegar: '))
+                biblioteca.emprestar(a)
+                continue
+            case 3:
+                b = int(input('Digite o id do livro que queira devolver: '))
+                biblioteca.devolver(b)
+                continue
+            case _:
+                print('Digite os numeros corretos!')
+except ValueError:
+    print('Pinando no texto ne but')
