@@ -1078,47 +1078,81 @@ caminho2 = Path(__file__).parent / 'teste.txt'
 #         else:
 #             print('Nao pode ultrapassar a velocidade maxima!') 
 # 134
-class Livro: ##FRITADOR DE CEREBRO 3000
-    def __init__(self, titulo, autor, disponivel, id):
-        self.titulo = titulo
-        self.autor = autor
-        self.disponivel = disponivel
-        self.id = id
-class Biblioteca:
+# class Livro: ##FRITADOR DE CEREBRO 3000
+#     def __init__(self, titulo, autor, disponivel, id):
+#         self.titulo = titulo
+#         self.autor = autor
+#         self.disponivel = disponivel
+#         self.id = id
+# class Biblioteca:
+#     def __init__(self):
+#         self.livros = []
+#     def adicionar(self, Livro):
+#         self.livros.append(Livro)
+#     def visualizar(self):
+#         for i in self.livros:
+#             print(i.titulo, i.autor, i.disponivel, i.id)
+#     def emprestar(self, i):
+#         self.livros[i].disponivel = 'Nao'
+#     def devolver(self, i):
+#         self.livros[i].disponivel = 'Sim'
+# biblioteca = Biblioteca()
+# livro1 = Livro('O Auto da compadecida', 'Ariano Suassuna', 'Sim', 0)
+# livro2 = Livro('Meridiano de sangue', 'Cormac McCarthy', 'Sim', 1)
+# biblioteca.adicionar(livro1)
+# biblioteca.adicionar(livro2)
+# try:
+#     while True:
+#         a = int(input('Digite 0 para sair\n1 para visualizar os itens\n2 para emprestar um livro\n3 para devolver o livro\n: '))
+#         match a:
+#             case 0:
+#                 break
+#             case 1:
+#                 biblioteca.visualizar()
+#                 continue
+#             case 2:
+#                 a = int(input('Digite o id do livro que queira pegar: '))
+#                 biblioteca.emprestar(a)
+#                 continue
+#             case 3:
+#                 b = int(input('Digite o id do livro que queira devolver: '))
+#                 biblioteca.devolver(b)
+#                 continue
+#             case _:
+#                 print('Digite os numeros corretos!')
+# except ValueError:
+#     print('Pinando no texto ne but')
+# 135
+class Produto:
+    def __init__(self, nome, valor):
+        self.nome = nome
+        self.valor = valor
+class Produtos:
     def __init__(self):
-        self.livros = []
-    def adicionar(self, Livro):
-        self.livros.append(Livro)
-    def visualizar(self):
-        for i in self.livros:
-            print(i.titulo, i.autor, i.disponivel, i.id)
-    def emprestar(self, i):
-        self.livros[i].disponivel = 'Nao'
-    def devolver(self, i):
-        self.livros[i].disponivel = 'Sim'
-biblioteca = Biblioteca()
-livro1 = Livro('O Auto da compadecida', 'Ariano Suassuna', 'Sim', 0)
-livro2 = Livro('Meridiano de sangue', 'Cormac McCarthy', 'Sim', 1)
-biblioteca.adicionar(livro1)
-biblioteca.adicionar(livro2)
-try:
-    while True:
-        a = int(input('Digite 0 para sair\n1 para visualizar os itens\n2 para emprestar um livro\n3 para devolver o livro\n: '))
-        match a:
-            case 0:
-                break
-            case 1:
-                biblioteca.visualizar()
-                continue
-            case 2:
-                a = int(input('Digite o id do livro que queira pegar: '))
-                biblioteca.emprestar(a)
-                continue
-            case 3:
-                b = int(input('Digite o id do livro que queira devolver: '))
-                biblioteca.devolver(b)
-                continue
-            case _:
-                print('Digite os numeros corretos!')
-except ValueError:
-    print('Pinando no texto ne but')
+        self.produtos = []
+    def adicionar(self, Produto):
+        self.produtos.append(Produto)
+    def listar(self):
+        for i in self.produtos:
+            print(i.nome, i.valor)
+    def procurar(self, a):
+        for i in self.produtos:
+            if a == i.nome:
+                print(i.nome, i.valor)
+    def soma(self):
+        val = 0
+        for i in self.produtos:
+            val += i.valor
+            print(val)
+
+produtos = Produtos()
+for i in range(2):
+    a = input('Digite o nome do produto: ')
+    b = int(input('Digite o preco do produto: '))
+    c = Produto(a, b)
+    for i in range(1):
+        produtos.adicionar(c)
+produtos.listar()
+a = input('Digite o nome do produto que queira procurar: ')
+produtos.procurar(a)
+produtos.soma()
